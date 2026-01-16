@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Una carta para ti</title>
+    <title>Para ti, esta noche</title>
 
     <style>
         body {
@@ -18,38 +18,63 @@
             margin: 50px auto;
             padding: 55px;
             background: rgba(0, 0, 0, 0.6);
-            border-radius: 28px;
+            border-radius: 30px;
             box-shadow: 0 0 45px rgba(0,0,0,0.85);
+        }
+
+        /* Invitación romántica */
+        .invitacion {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: aparecer 3s ease-in-out;
+        }
+
+        .latido {
+            font-size: 3.5rem;
+            color: #ff8fab;
+            animation: latir 1.6s infinite;
+            margin-bottom: 10px;
+        }
+
+        .invitacion p {
+            font-style: italic;
+            font-size: 1.15rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        @keyframes latir {
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.25); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.7; }
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Video */
+        .video {
+            margin-bottom: 45px;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255,182,193,0.45);
         }
 
         h1 {
             text-align: center;
             font-weight: normal;
             letter-spacing: 3px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #ffd1dc;
         }
 
-        .subtitulo {
-            text-align: center;
-            font-size: 1rem;
-            opacity: 0.85;
-            margin-bottom: 35px;
-            font-style: italic;
-        }
-
         p {
-            font-size: 1.16rem;
+            font-size: 1.17rem;
             line-height: 2.05;
             margin-bottom: 28px;
             text-align: justify;
-        }
-
-        .video {
-            margin-bottom: 45px;
-            border-radius: 22px;
-            overflow: hidden;
-            box-shadow: 0 0 30px rgba(255,182,193,0.45);
         }
 
         .corazones {
@@ -79,6 +104,16 @@
 
 <div class="contenedor">
 
+    <!-- Invitación a dar play -->
+    <div class="invitacion">
+        <div class="latido">♥</div>
+        <p>
+            Antes de leer…<br>
+            dale play, respira profundo<br>
+            y deja que la música nos acompañe
+        </p>
+    </div>
+
     <!-- Video con letra -->
     <div class="video">
         <iframe width="100%" height="380"
@@ -91,9 +126,6 @@
     </div>
 
     <h1>Para ti, esta noche</h1>
-    <div class="subtitulo">
-        Dale play, respira profundo… y lee despacio
-    </div>
 
     <p>Amor mío,</p>
 
@@ -102,13 +134,13 @@
         cae con esa calma que solo aparece cuando todo se apaga,
         quiero quedarme contigo un poco más.
         Quiero que esta carta sea un refugio,
-        un espacio donde no exista el ruido,
-        donde solo estemos tú y yo.
+        un lugar donde el tiempo no apure
+        y donde cada palabra pueda tocarte con suavidad.
     </p>
 
     <p>
         Escribirte es mi forma más sincera de abrazarte a la distancia.
-        Cada palabra nace sin apuro,
+        Cada frase nace despacio,
         cargada de todo lo que no siempre sé decir en voz alta.
         Esta noche, pensarte no es casualidad,
         es necesidad,
@@ -126,26 +158,24 @@
     </p>
 
     <p>
-        Mi amor por ti no sigue una sola forma ni un solo ritmo.
-        A veces es lento y suave,
-        como una caricia que se da sin tocar.
+        Mi amor por ti no tiene una sola forma.
+        A veces es lento y tierno,
+        como una caricia que no necesita tocar.
         Otras veces es intenso,
         lleno de deseo,
-        de ganas de acercarme,
-        de abrazarte fuerte,
+        de ganas de abrazarte fuerte,
         de besarte sin prisa,
-        como si el tiempo nos perteneciera.
+        como si el tiempo fuera solo nuestro.
     </p>
 
     <p>
         Esta noche te imagino leyendo,
-        quizá en silencio,
-        quizá con la música sonando de fondo,
-        sin saber que cada palabra fue escrita pensando solo en ti.
-        Me doy cuenta de que no te amo solo en los momentos fáciles,
-        te amo en la espera,
+        con la música sonando de fondo,
+        sin saber que cada palabra fue escrita pensando únicamente en ti.
+        Me doy cuenta de que no te amo solo en los momentos felices,
+        te amo también en la espera,
         en la distancia,
-        en esas noches donde el deseo y la nostalgia se cruzan.
+        en esas noches donde el deseo y la nostalgia se encuentran.
     </p>
 
     <p>
@@ -155,40 +185,20 @@
         y quedarme ahí,
         sin necesidad de decir nada.
         Extraño besarte lento,
-        de esos besos que no piden permiso
-        y que se quedan grabados en la piel.
-    </p>
-
-    <p>
-        Hay noches como esta
-        en las que el deseo no es solo físico.
-        Es profundo.
-        Es el deseo de compartir la vida contigo,
-        de construir recuerdos,
-        de estar cuando todo va bien
-        y también cuando el mundo pesa.
+        de esos besos que se quedan en la memoria
+        y en la piel.
     </p>
 
     <p>
         Amarte me ha cambiado.
-        Me ha hecho más consciente,
-        más sensible,
+        Me ha hecho más sensible,
+        más consciente,
         más real.
         Me ha enseñado que el amor verdadero
-        no siempre se grita,
-        pero siempre se queda.
-        Y yo me quedo contigo,
+        no siempre grita,
+        pero siempre permanece.
+        Y yo permanezco contigo,
         incluso en la distancia.
-    </p>
-
-    <p>
-        Si esta carta pudiera tocarte,
-        lo haría con cuidado.
-        Te envolvería despacio,
-        te susurraría que no estás sola,
-        que hay un corazón que late por ti,
-        incluso cuando duermes,
-        incluso cuando no me ves.
     </p>
 
     <div class="corazones">
@@ -198,7 +208,7 @@
     <p>
         Que esta noche sientas mi amor cerca.
         Que esta canción acompañe cada palabra.
-        Que estas líneas te abracen
+        Que esta carta te abrace suave
         y que, al cerrar los ojos,
         sepas sin ninguna duda
         que te amo de una forma profunda,
