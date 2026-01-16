@@ -22,21 +22,21 @@
             box-shadow: 0 0 45px rgba(0,0,0,0.85);
         }
 
-        /* Invitación romántica */
-        .invitacion {
+        /* Corazón inicial */
+        .inicio {
             text-align: center;
             margin-bottom: 40px;
-            animation: aparecer 3s ease-in-out;
         }
 
-        .latido {
-            font-size: 3.5rem;
+        .corazon {
+            font-size: 5rem;
             color: #ff8fab;
+            cursor: pointer;
             animation: latir 1.6s infinite;
-            margin-bottom: 10px;
         }
 
-        .invitacion p {
+        .indicacion {
+            margin-top: 15px;
             font-style: italic;
             font-size: 1.15rem;
             opacity: 0.9;
@@ -49,17 +49,19 @@
             100% { transform: scale(1); opacity: 0.7; }
         }
 
-        @keyframes aparecer {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Video */
+        /* Video oculto */
         .video {
+            display: none;
             margin-bottom: 45px;
             border-radius: 22px;
             overflow: hidden;
             box-shadow: 0 0 30px rgba(255,182,193,0.45);
+            animation: aparecer 2s ease-in-out;
+        }
+
+        @keyframes aparecer {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         h1 {
@@ -104,18 +106,17 @@
 
 <div class="contenedor">
 
-    <!-- Invitación a dar play -->
-    <div class="invitacion">
-        <div class="latido">♥</div>
-        <p>
-            Antes de leer…<br>
-            dale play, respira profundo<br>
-            y deja que la música nos acompañe
-        </p>
+    <!-- Inicio con corazón -->
+    <div class="inicio" id="inicio">
+        <div class="corazon" onclick="mostrarVideo()">♥</div>
+        <div class="indicacion">
+            Toca el corazón…<br>
+            deja que el amor empiece a hablar
+        </div>
     </div>
 
     <!-- Video con letra -->
-    <div class="video">
+    <div class="video" id="video">
         <iframe width="100%" height="380"
             src="https://www.youtube.com/embed/UjIlY2oEOMc"
             title="Canción con letra"
@@ -155,27 +156,6 @@
         y mi alma encuentra calma.
         Tu nombre se queda suspendido en mis pensamientos
         como una melodía que no quiero que termine.
-    </p>
-
-    <p>
-        Mi amor por ti no tiene una sola forma.
-        A veces es lento y tierno,
-        como una caricia que no necesita tocar.
-        Otras veces es intenso,
-        lleno de deseo,
-        de ganas de abrazarte fuerte,
-        de besarte sin prisa,
-        como si el tiempo fuera solo nuestro.
-    </p>
-
-    <p>
-        Esta noche te imagino leyendo,
-        con la música sonando de fondo,
-        sin saber que cada palabra fue escrita pensando únicamente en ti.
-        Me doy cuenta de que no te amo solo en los momentos felices,
-        te amo también en la espera,
-        en la distancia,
-        en esas noches donde el deseo y la nostalgia se encuentran.
     </p>
 
     <p>
@@ -227,6 +207,13 @@
     </footer>
 
 </div>
+
+<script>
+function mostrarVideo() {
+    document.getElementById("inicio").style.display = "none";
+    document.getElementById("video").style.display = "block";
+}
+</script>
 
 </body>
 </html>
